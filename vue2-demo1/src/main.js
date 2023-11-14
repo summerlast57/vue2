@@ -5,6 +5,12 @@ import Vue from 'vue'
 // 2.导入App.vue 根组件
 import App from './App.vue'
 
+// 导入全局组件
+import HmButton from './components/HmButton'
+
+// 全局注册
+Vue.component('HmButton',HmButton)
+
 // 提示当前处于什么环境（生产环境/开发环境）
 Vue.config.productionTip = false
 
